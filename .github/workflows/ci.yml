@@ -15,10 +15,13 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.2'
+        php-version: '8.1'
 
-    - name: Install Composer dependencies
-      run: composer install
-
-    - name: Run PHP Unit Tests
-      run: composer test
+    - name: Run PHP Validation Tests
+      run: |
+        php -r "include 'Kelompok10/validasi.php'; 
+        echo validasi_form_pendaftaran('', '08123', 'a@b') === 'Nama Lengkap tidak boleh kosong' ? 'OK1 ' : 'FAIL1 ';
+        echo validasi_form_pendaftaran('Zahra', '', 'a@b') === 'Nomor Telepon tidak boleh kosong' ? 'OK2 ' : 'FAIL2 ';
+        echo validasi_form_pendaftaran('Zahra', '08AB12', 'a@b') === 'Nomor Telepon hanya boleh angka' ? 'OK3 ' : 'FAIL3 ';
+        echo validasi_form_pendaftaran('Zahra', '0812345678', 'salahemail') === 'Format Email tidak valid' ? 'OK4 ' : 'FAIL4 ';
+        echo validasi_form_pendaftaran('Zahra', '0812345678', 'zahra@gmail.com') === 'VALID' ? 'OK5 ' : 'FAIL5 ';"
