@@ -21,4 +21,18 @@ jobs:
       run: |
         php -r "
         include 'Kelompok10/validasi.php';
+         // P1 – Nama kosong
+        echo validasi_form_pendaftaran('', '08123456789', 'zahrotun@gmail.com') === 'Nama Lengkap tidak boleh kosong' ? 'OK1 ' : 'FAIL1 ';
+
+        // P2 – Telp kosong
+        echo validasi_form_pendaftaran('Zahrotun', '', 'zahrotun@gmail.com') === 'Nomor Telepon tidak boleh kosong' ? 'OK2 ' : 'FAIL2 ';
+
+        // P3 – Telp mengandung huruf
+        echo validasi_form_pendaftaran('Zahrotun', '08ABC1234', 'zahrotun@gmail.com') === 'Nomor Telepon hanya boleh angka' ? 'OK3 ' : 'FAIL3 ';
+
+        // P4 – Email tidak valid
+        echo validasi_form_pendaftaran('Zahrotun', '08123456789', 'zahrotun@gmail') === 'Format Email tidak valid' ? 'OK4 ' : 'FAIL4 ';
+
+        // P5 – Semua valid
+        echo validasi_form_pendaftaran('Zahrotun', '08123456789', 'zahrotun@gmail.com') === 'VALID' ? 'OK5 ' : 'FAIL5 ';
         "
