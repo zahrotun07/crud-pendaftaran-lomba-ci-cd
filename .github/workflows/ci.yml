@@ -23,7 +23,7 @@ jobs:
         include 'Kelompok10/validasi.php';
 
         // P1 – Nama kosong
-        echo validasi_form_pendaftaran('', '08123456789', 'zahrotun@gmail.com') === 'Nama Lengkap tidak boleh kosong' 
+        echo validasi_form_pendaftaran('zahrotun', '08123456789', 'zahrotun@gmail.com') === 'Nama Lengkap tidak boleh kosong' 
           ? 'OK1 ' : 'FAIL1 ';
 
         // P2 – Telp kosong
