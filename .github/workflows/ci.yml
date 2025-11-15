@@ -20,5 +20,5 @@ jobs:
     - name: Run PHP Validation Tests
       run: |
         php -r "
-        include 'Kelompok10/test_validasi.php';
+        include 'Kelompok10/validasi.php';
         "
