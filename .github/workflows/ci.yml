@@ -20,7 +20,7 @@ jobs:
     - name: Run PHP Validation Tests
       run: |
         php -r "
-        include 'Kelompok10/validasi.php';
+        include 'Kelompok10/validasi_form_pendaftaran.php';
          // P1 – Nama kosong
         echo validasi_form_pendaftaran('', '08123456789', 'zahrotun@gmail.com') === 'Nama Lengkap tidak boleh kosong' ? 'OK1 ' : 'FAIL1 ';
 
