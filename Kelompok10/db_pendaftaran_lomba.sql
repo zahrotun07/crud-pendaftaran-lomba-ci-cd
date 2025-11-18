@@ -45,7 +45,7 @@ INSERT INTO `pendaftaran` (`id_pendaftaran`, `nama_lengkap`, `nomor_telepon`, `e
 (1, 'Andi Setiawan', '0812345678', 'andi@example.com', 'Nyanyi', '2025-11-07 12:04:53', '2025-11-07 12:04:53'),
 (2, 'Siti Rahma', '081234567890', 'siti@example.com', 'Melukis', '2025-11-07 12:04:53', '2025-11-07 12:04:53'),
 (3, 'zahrotun', '0831245678901', '', 'Nyanyi', '2025-11-07 12:09:49', '2025-11-07 13:26:55'),
-(6, 'data', '0987652123321', 'zahrotun0712@gmail.com', 'Nyanyi', '2025-11-13 07:25:26', '2025-11-13 07:25:26');
+(6, 'zahrotun', '08123456789', 'zahrotun0712@gmail.com', 'Nyanyi', '2025-11-13 07:25:26', '2025-11-13 07:25:26');
 
 --
 -- Indexes for dumped tables
