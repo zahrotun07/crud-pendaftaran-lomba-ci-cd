@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $lomba = trim($_POST['pilihan_lomba']);
 
     // 🔹 VALIDASI WHITE BOX (dipanggil dari validasi.php)
-    $hasilValidasi = validasi_form_pendaftaran($nama, $telp, $email);
+    $hasilValidasi = validasi_form_pendaftaran($nama, $telp, $email, $lomba);
 
     if ($hasilValidasi !== "VALID") {
         // Jika ada error → tampilkan ke halaman
@@ -134,3 +134,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </div>
 </body>
 </html>
+
