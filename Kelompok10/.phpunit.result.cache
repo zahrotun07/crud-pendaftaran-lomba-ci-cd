@@ -1,0 +1,1 @@
+{"version":2,"defects":[],"times":{"ValidasiFormPendaftaranTest::test_nama_kosong":0.012,"ValidasiFormPendaftaranTest::test_telp_kosong":0,"ValidasiFormPendaftaranTest::test_telp_mengandung_huruf":0,"ValidasiFormPendaftaranTest::test_email_tidak_valid":0.001,"ValidasiFormPendaftaranTest::test_input_valid":0}}
