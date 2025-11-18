@@ -1,0 +1,12 @@
+{
+  "name": "zahrotun/crud-pendaftaran-lomba",
+  "description": "Unit test validasi pendaftaran lomba",
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "files": [
+      "validasi.php"
+    ]
+  }
+}
