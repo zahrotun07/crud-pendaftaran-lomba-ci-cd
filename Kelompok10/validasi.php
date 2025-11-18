@@ -1,10 +1,15 @@
 <?php
 
-function validasi_form_pendaftaran(string $nama, string $telp, string $email): string
-{
+function validasi_form_pendaftaran(
+    string $nama,
+    string $telp,
+    string $email,
+    string $lomba
+): string {
     $nama  = trim($nama);
     $telp  = trim($telp);
     $email = trim($email);
+    $lomba = trim($lomba); 
 
     // 1. Nama tidak boleh kosong
     if ($nama === '') {
@@ -21,7 +26,7 @@ function validasi_form_pendaftaran(string $nama, string $telp, string $email): s
         return "Nomor Telepon hanya boleh angka";
     }
 
-    // 4. Email tidak valid
+    // 4. Email tidak valid (kalau diisi)
     if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         return "Format Email tidak valid";
     }
